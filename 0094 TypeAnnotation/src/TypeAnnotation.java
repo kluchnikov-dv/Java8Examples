@@ -103,5 +103,7 @@ public class TypeAnnotation <@What(description = "Данные обобщенн�
 		// TODO Auto-generated method stub
 		myMeth(10);
 	}
-
+	
+	//применить типовую аннотацию в выражении наследования
+	class SomeClass extends @TypeAnno TypeAnnotation<Boolean> {}
 }
