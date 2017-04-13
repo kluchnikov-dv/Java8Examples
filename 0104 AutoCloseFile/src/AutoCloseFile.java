@@ -11,7 +11,10 @@ public class AutoCloseFile {
 		// TODO Auto-generated method stub
 		int i;
 		//проверяем указано ли имя файла
-		if (args.length != 1) System.out.println("Спецификация ввода: java AutoCloseFile test.txt");
+		if (args.length != 1) {
+			System.out.println("Спецификация ввода: java AutoCloseFile test.txt");
+			return;
+		}
 		//оператор try с ресурсами - применяется для открытия файла и автоматического закрытия по завершении опрератора try
 		try(FileInputStream fin = new FileInputStream(args[0])) {
 			do {
