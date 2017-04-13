@@ -22,9 +22,9 @@ public class ReadWriteFileDemo {
 				i = fin.read();
 				if (i != -1) System.out.print((char) i);
 			} while (i != -1);
-		} catch (FileNotFoundException e) {
+		} catch (FileNotFoundException e) { //по идее класс FileNotException наследуется от IOExeption поэтому его не обязательно указывать 
 			System.out.println("Файл не найден.");			
-		} catch (IOException e) {
+		} catch (IOException e) { //IOException обработает и открытие файла
 			System.out.println("Ошибка чтения файла.");
 		} finally {
 			try {
