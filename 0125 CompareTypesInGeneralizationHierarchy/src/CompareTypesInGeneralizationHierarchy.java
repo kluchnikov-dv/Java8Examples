@@ -44,7 +44,8 @@ public class CompareTypesInGeneralizationHierarchy {
 		//т.к. во время выполнения конкретный тип параметра обобщенного класса определить нельзя
 		//if(iobj1 instanceof Generalization<Integer>) System.out.println("iobj1 является обьектом класса Generalization.");
 		
-
+		Generalization<Integer> iobj = (Generalization<Integer>) iobj2; //такое приведение допустимо
+		//Generalization<Long> lobj = (Generalization<Long>) iobj2; //такое приведение недопустимо
 	}
 
 }
